@@ -2,8 +2,15 @@ resolver: lts-8.13
 
 packages:
   - .
-
-extra-deps:
-  - nvim-hs-0.2.4
-  - nvim-hs-ghcid-0.2.0
-  - nvim-hs-contrib-0.2.0
+  - location:
+      git: https://github.com/neovimhaskell/nvim-hs
+      commit: HEAD
+    extra-dep: true
+  - location:
+      git: https://github.com/neovimhaskell/nvim-hs-contrib
+      commit: HEAD
+    extra-dep: true
+  - location:
+      git: https://github.com/saep/nvim-hs-ghcid
+      commit: HEAD
+    extra-dep: true
