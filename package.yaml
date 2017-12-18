@@ -1,0 +1,19 @@
+name:                vimhs
+version:             0.1.0.0
+homepage:            https://github.com/uuhan/vimhs#readme
+license:             BSD3
+author:              uuhan
+maintainer:          xuminhui189@gmail.com
+category:            Neovim
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - nvim-hs
+  - nvim-hs-ghcid
+
+executables:
+  vimhs:
+    source-dirs: src
+    main:        Main.hs
