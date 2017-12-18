@@ -1,5 +1,7 @@
 module Main where
 
+import           Neovim
+import qualified Neovim.Ghcid as Ghcid
+
 main :: IO ()
-main = do
-  putStrLn "hello world"
+main = neovim defaultConfig { plugins = plugins defaultConfig <> [ Ghcid.plugin ] }
