@@ -15,5 +15,10 @@ dependencies:
 
 executables:
   vimhs:
-    source-dirs: src
+    source-dirs:
+      - .
+      - plugins
     main:        Main.hs
+    other-modules:
+      - Fibonacci.Plugin
+      - Fibonacci
