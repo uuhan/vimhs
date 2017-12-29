@@ -9,4 +9,5 @@ main = neovim defaultConfig { plugins = plugins defaultConfig
                                           <> [ Ghcid.plugin
                                              , Fibonacci.plugin
                                              ]
+                            , logOptions = Just ("/Users/xu/vimhs.log", DEBUG)
                             }
