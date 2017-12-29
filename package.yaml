@@ -22,3 +22,5 @@ executables:
     other-modules:
       - Fibonacci.Plugin
       - Fibonacci
+      - HackerNews.Plugin
+      - HackerNews
