@@ -2,10 +2,7 @@ resolver: lts-10.0
 
 packages:
   - .
-  - location:
-      git: https://github.com/neovimhaskell/nvim-hs
-      commit: HEAD
-    extra-dep: true
+  - ../nvim-hs
   - location:
       git: https://github.com/neovimhaskell/nvim-hs-contrib
       commit: HEAD
