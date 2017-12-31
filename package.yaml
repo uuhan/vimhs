@@ -10,8 +10,11 @@ extra-source-files:
 
 dependencies:
   - base >= 4.7 && < 5
+  - bytestring
+  - containers
   - nvim-hs
   - nvim-hs-ghcid
+  - word8
 
 executables:
   vimhs:
@@ -24,3 +27,5 @@ executables:
       - Fibonacci
       - HackerNews.Plugin
       - HackerNews
+      - Ghcmod
+      - Ghcmod.Plugin
