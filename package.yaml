@@ -15,6 +15,7 @@ dependencies:
   - nvim-hs
   - nvim-hs-ghcid
   - word8
+  - glsl-completation
 
 executables:
   vimhs:

@@ -14,3 +14,6 @@ packages:
       git: https://github.com/saep/nvim-hs-ghcid
       commit: HEAD
     extra-dep: true
+
+extra-deps:
+  - ../glsl-completation
