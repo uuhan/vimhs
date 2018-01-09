@@ -10,10 +10,7 @@ packages:
       git: https://github.com/neovimhaskell/nvim-hs-contrib
       commit: HEAD
     extra-dep: true
-  - location:
-      git: https://github.com/saep/nvim-hs-ghcid
-      commit: HEAD
-    extra-dep: true
 
 extra-deps:
   - ../glsl-completation
+  - ../nvim-hs-ghcid
