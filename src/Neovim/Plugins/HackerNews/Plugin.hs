@@ -1,4 +1,4 @@
-module HackerNews.Plugin
+module Neovim.Plugins.HackerNews.Plugin
   where
 
 import           Neovim

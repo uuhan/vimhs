@@ -1,12 +1,12 @@
 {-# LANGUAGE TemplateHaskell #-}
-module Fibonacci
+module Neovim.Plugins.HackerNews
   ( plugin )
   where
 
-import           Fibonacci.Plugin (fibonacci)
+import           Neovim.Plugins.HackerNews.Plugin (hn)
 import           Neovim
 
 plugin :: Neovim (StartupConfig NeovimConfig) () NeovimPlugin
-plugin = wrapPlugin Plugin { exports         = [$(function' 'fibonacci) Sync]
+plugin = wrapPlugin Plugin { exports         = [$(function' 'hn) Sync]
                            , statefulExports = []
                            }

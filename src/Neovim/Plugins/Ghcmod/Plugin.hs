@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Ghcmod.Plugin
+module Neovim.Plugins.Ghcmod.Plugin
   where
 
 import           Neovim as N

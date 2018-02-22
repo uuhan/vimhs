@@ -1,12 +1,12 @@
 {-# LANGUAGE TemplateHaskell #-}
-module HackerNews
+module Neovim.Plugins.GLSL
   ( plugin )
   where
 
-import           HackerNews.Plugin (hn)
 import           Neovim
+import           Neovim.Plugins.GLSL.Plugin
 
 plugin :: Neovim (StartupConfig NeovimConfig) () NeovimPlugin
-plugin = wrapPlugin Plugin { exports         = [$(function' 'hn) Sync]
+plugin = wrapPlugin Plugin { exports = [$(function' 'glsl) Sync]
                            , statefulExports = []
                            }
