@@ -8,6 +8,10 @@ category:            Neovim
 extra-source-files:
   - README.md
 
+default-extensions:
+  - OverloadedStrings
+  - TemplateHaskell
+
 dependencies:
   - base >= 4.7 && < 5
   - aeson
@@ -15,9 +19,12 @@ dependencies:
   - bytestring
   - containers
   - nvim-hs
+  - nvim-hs-contrib
   - nvim-hs-ghcid
   - word8
+  - parsec
   - curl
+  - text
   - tagsoup
   - scalpel
 
@@ -27,11 +34,3 @@ executables:
       - .
       - src
     main:        Main.hs
-    other-modules:
-      - Neovim.Plugins.HackerNews.Plugin
-      - Neovim.Plugins.HackerNews
-      - Neovim.Plugins.Ghcmod.Plugin
-      - Neovim.Plugins.Ghcmod
-      - Neovim.Plugins.GLSL.Plugin
-      - Neovim.Plugins.GLSL.Api
-      - Neovim.Plugins.GLSL

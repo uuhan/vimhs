@@ -2,14 +2,15 @@ resolver: lts-10.5
 
 packages:
   - .
+  - ../nvim-hs-ghcid
   - location:
       git: https://github.com/neovimhaskell/nvim-hs
       commit: HEAD
     extra-dep: true
-  - location:
-      git: https://github.com/ndmitchell/ghcid
-      commit: HEAD
-    extra-dep: true
+  # - location:
+  #     git: https://github.com/ndmitchell/ghcid
+  #     commit: HEAD
+  #   extra-dep: true
   - location:
       git: https://github.com/neovimhaskell/nvim-hs-contrib
       commit: HEAD
