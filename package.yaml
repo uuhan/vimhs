@@ -17,6 +17,9 @@ dependencies:
   - nvim-hs
   - nvim-hs-ghcid
   - word8
+  - curl
+  - tagsoup
+  - scalpel
 
 executables:
   vimhs:
